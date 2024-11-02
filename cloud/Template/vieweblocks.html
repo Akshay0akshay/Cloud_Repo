@@ -1,0 +1,40 @@
+{% extends 'userhome.html' %}
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="{% url 'viewdblock' id=id.fid  %}" method="post">
+    {% csrf_token %}
+     <div class="form-group">
+                        <label class="col-form-label">Block 1</label>
+                    <textarea  name="eblock1" style="width:100%;height:100px;" class="form-control" rows="3" cols="3">{{ block1.block }}</textarea></td>
+
+                    </div>
+     <div class="form-group">
+                        <label class="col-form-label">Block 2</label>
+                    <textarea  name="eblock2" style="width:100%;height:100px;" class="form-control" rows="3" cols="3">{{ block2.block }}</textarea></td>
+
+                    </div>
+     <div class="form-group">
+                        <label class="col-form-label">Block 3</label>
+                    <textarea  name="eblock3" style="width:100%;height:100px;" class="form-control" rows="3" cols="3">{{ block3.block }}</textarea></td>
+
+                    </div>
+    <div class="form-group">
+                        <label class="col-form-label">Key</label>
+                        <input type="text" class="form-control"  width="100%" name="key" required="">
+                    </div>
+
+
+ <button type="submit" class="btn button-style-w3">Proceed</button>
+
+
+
+
+</form>
+</body>
+</html>
+{% endblock %}

@@ -1,0 +1,45 @@
+{% extends 'userhome.html' %}
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="{% url 'encrypt' %}" method="post">
+    {% csrf_token %}
+ <div class="form-group">
+                        <label class="col-form-label">Block 1</label>
+                    <textarea  name="eblock1" style="width:100%;height:100px;" class="form-control" rows="3" cols="3">{{ data }}</textarea></td>
+
+                    </div>
+     <div class="form-group">
+                        <label class="col-form-label">Block 2</label>
+                    <textarea  name="eblock2" style="width:100%;height:100px;" class="form-control" rows="3" cols="3">{{ block2 }}</textarea></td>
+
+                    </div>
+     <div class="form-group">
+                        <label class="col-form-label">Block 3</label>
+                    <textarea  name="eblock3" style="width:100%;height:100px;" class="form-control" rows="3" cols="3">{{ block3 }}</textarea></td>
+
+                    </div>
+
+
+
+ <button type="submit" class="btn button-style-w3">Proceed</button>
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</body>
+</html>
+{% endblock %}

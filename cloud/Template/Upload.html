@@ -1,0 +1,39 @@
+{% extends 'userhome.html' %}
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+    function validation()
+    {
+        var file=frm.file.value;
+        var reg=/(.*?)\.(txt)$/;
+        if(!file.match(reg))
+        {
+          alert("please upload text files only")
+          return false;
+        }
+        else if(document.frm.image.value=="")
+        {
+        alert("plz select file");
+        return false;
+        }
+     }
+    </script>
+</head>
+<body>
+<div align="center">
+    <form method="post" action="{% url 'upload' %}" enctype="multipart/form-data" name="frm">
+        {% csrf_token %}
+            <div class="form-group">
+                        <label class="col-form-label">Upload File</label>
+                        <input type="file" class="form-control"  name="file">
+                    </div>
+             <button type="submit" class="btn button-style-w3" onclick="return validation()">Upload</button>
+{{s}}
+    </form>
+</div>
+</body>
+</html>
+{% endblock %}

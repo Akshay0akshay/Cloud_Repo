@@ -1,0 +1,16 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body bgcolor="green">
+<div align="right">
+  <a href="{% url 'upload' %}">Upload</a>
+    <a href="{% url 'block' %}">Block</a>
+     <a href="{% url 'download' %}">Download</a>
+</div>
+ {% block content %}
+                  {% endblock %}
+</body>
+</html>

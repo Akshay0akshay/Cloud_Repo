@@ -1,0 +1,590 @@
+<!--
+	Author: W3layouts
+	Author URL: http://w3layouts.com
+	License: Creative Commons Attribution 3.0 Unported
+	License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+{% load static %}
+<html lang="en">
+<!-- Head -->
+<head>
+<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="keywords" content="Blista a Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+
+	<!-- gallery -->
+<link rel="stylesheet" href="{% static 'indextemp/css/lightGallery.css' %}" type="text/css" media="all" />
+<!-- //gallery -->
+
+<!-- //Default-JavaScript-File -->
+<link href="//fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+<link href="{% static 'indextemp/css/font-awesome.css' %}" rel="stylesheet">		<!-- font-awesome icons-css-file -->
+<link href="{% static 'indextemp/css/bootstrap.css' %}" type="text/css" rel="stylesheet" media="all">	<!-- bootstrap-css-file -->
+<link href="{% static 'indextemp/css/style.css' %}" type="text/css" rel="stylesheet" media="all">	<!-- style-css-file -->
+
+</head>
+<!-- Head -->
+
+		<!-- Scrolling Nav JavaScript --> 
+    <script src="{% static 'indextemp/js/scrolling-nav.js' %}"></script>
+<!-- //fixed-scroll-nav-js --> 
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+	<!-- banner -->
+	<div id="home" class="w3ls-banner"> 
+		<!-- header -->
+		<div class="header-w3layouts"> 
+			<!-- Navigation -->
+			<nav class="navbar navbar-default navbar-fixed-top"> 
+				<div class="container">
+					<div class="navbar-header page-scroll">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+							<span class="sr-only">Cloud Storage</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<h1><a class="navbar-brand" href="#"><i class="fa fa-crosshairs" aria-hidden="true"></i>Cloud Storage</a></h1>
+					</div> 
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse navbar-ex1-collapse">
+						<ul class="nav navbar-nav navbar-right cl-effect-15">
+							<!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+							<li class="hidden"><a class="page-scroll" href="#page-top"></a>	</li>
+							<li><a  href="{% url 'index' %}">Home</a></li>
+							<li><a href="#">About</a></li>
+							<li><a href="{% url 'login' %}">Login</a></li>
+							<li><a  href="{% url 'reg' %}">Registartion</a></li>
+
+						</ul>
+					</div>
+					<!-- /.navbar-collapse -->
+				</div>
+				<!-- /.container -->
+			</nav>  
+		</div>	
+		<!-- //header -->
+		<!--banner-->
+		<!--Slider-->
+			<div class="w3l_banner_info">
+				<div class=" slider">
+					<div class="callbacks_container">
+								<ul class="rslides" id="slider3">
+									<li>
+										<div class="slider_banner_info">
+											 <h4>Upload Files</h4>
+											<p></p>
+										</div>
+
+									</li>
+									<li>
+										<div class="slider_banner_info">
+											<h4>Encrypt Files</h4>
+											<p></p>
+										</div>
+
+									</li>
+									<li>
+										<div class="slider_banner_info">
+											<h4>Decrypt Files</h4>
+											<p></p>
+										</div>
+
+									</li>
+									<li>
+										<div class="slider_banner_info">
+											<h4>Download Files</h4>
+											<p> </p>
+										</div>
+
+									</li>
+								</ul>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			<!--//Slider-->
+			
+			</div>
+		<!--//banner-->
+		
+	</div>	
+	<!-- //banner --> 
+	
+<!-- about -->
+<div class="about" id="about">
+	<div class="container">
+		<div class="about-head text-center ">
+			<h3>About</h3>
+		</div>	
+		<div class="about-bottom-grid1">
+			<div class="col-md-6 bottomgridtext">
+				<h3></h3>
+				<p></p>
+				<div class="readmore-w3">
+					<a href="#"></a>
+				</div>
+			</div>
+			<div class="col-md-6 bottomgridimg">
+				<img src="{% static 'indextemp/images/ab1.jpg' %}" alt="">
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="about-bottom-grid2">
+			<div class="col-md-6 bottomgridimg">
+				<img src="{% static 'indextemp/images/ab2.jpg' %}" alt="">
+			</div>
+			<div class="col-md-6 bottomgridtext bottomleft">
+				<h3></h3>
+				<p></p>
+				<!--<div class="readmore-w3">
+					<a href="#"></a>
+				</div>-->
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</div>
+<!-- //about -->
+<!-- services -->
+	<div id="services" class="services">
+	<div class="container">
+	<div class="w3-services-head">
+		<h3>services</h3>
+		</div>
+			<!-- banner-bottom -->
+	<div class="banner-bottom">
+		<div class="col-md-4 agileits_banner_bottom_left">
+			<div class="agileinfo_banner_bottom_pos">
+				<div class="w3_agileits_banner_bottom_pos_grid">
+					<div class=" wthree_banner_bottom_grid_left">
+						<div class="agile_banner_bottom_grid_left_grid hvr-radial-out">
+								<i class="fa fa-american-sign-language-interpreting" aria-hidden="true"></i>
+						</div>
+					</div>
+					<div class=" wthree_banner_bottom_grid_right">	
+						<h4>Business Experts</h4>
+						<p></p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4 agileits_banner_bottom_left1">
+			<div class="agileinfo_banner_bottom_pos">
+				<div class="w3_agileits_banner_bottom_pos_grid">
+					<div class=" wthree_banner_bottom_grid_left">
+						<div class="agile_banner_bottom_grid_left_grid hvr-radial-out">
+							<i class="fa fa-users" aria-hidden="true"></i>
+						</div>
+					</div>
+					<div class=" wthree_banner_bottom_grid_right">	
+						<h4>24/7 sloution</h4>
+						<p></p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4 agileits_banner_bottom_left2">
+			<div class="agileinfo_banner_bottom_pos">
+				<div class="w3_agileits_banner_bottom_pos_grid">
+					<div class=" wthree_banner_bottom_grid_left">
+						<div class="agile_banner_bottom_grid_left_grid hvr-radial-out">
+							<i class="fa fa-briefcase" aria-hidden="true"></i>
+						</div>
+					</div>
+					<div class=" wthree_banner_bottom_grid_right">	
+						<h4>online business</h4>
+						<p></p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+	<div class="service-banner-bottom1">
+		<div class="w3-service-button-head">
+			<h3></h3>
+		</div>
+		<div class="col-md-8 service1-left">
+			<div class="service-left-info">
+				<h3></h3>
+				<h4></h4>
+				<p></p>
+		</div>
+		</div>
+		<div class="col-md-4 service1-right">
+			<div class="w3-service-right-button">
+			<a href="#" data-toggle="modal" data-target="#myModal2"></a>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+	
+<!-- //banner-bottom -->
+	</div>
+</div>
+<!-- popup for sign up form -->
+<div class="modal video-modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModal2">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div id="small-dialog2" class="mfp-hide book-form">
+			<!--<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h3>Sign Up</h3>
+					<form action="#" method="post">
+						<input type="text" name="Name" placeholder="Your Name" required=""/>
+						<input type="text" name="Email" class="email" placeholder="Email" required=""/>
+						<input type="text" name="Mobile"  placeholder="Mobile Number" required=""/>
+						<input type="password" name="Password" class="password" placeholder="Password" required=""/>	
+						<input type="password" name="Password" class="password" placeholder="Confirm Password" required=""/>
+						<input type="submit" value="Sign Up">
+					</form>-->
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //popup for sign up form -->
+
+	<!-- //services --> 
+	<!-- team -->
+	<div class="team jarallax" id="team">
+		<div class="team-dot">
+			<div class="container">
+				<div class="wthree-heading about-heading">
+					<h3> Team</h3>
+
+				</div>
+				<div class="agile-team-grids">
+					<div class="col-sm-3 team-grid">
+						<div class="flip-container">
+							<div class="flipper">
+								<div class="front">
+									<img src="{% static 'indextemp/images/tm1.jpg' %}" alt="" />
+								</div>
+								<div class="back">
+									<h4>Peter Parker</h4>
+									<p>planner </p>
+									<div class="w3l-social">
+										<ul>
+											<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+											<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+											<li><a href="#"><i class="fa fa-rss"></i></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 team-grid">
+						<div class="flip-container">
+							<div class="flipper">
+								<div class="front">
+									<img src="{% static 'indextemp/images/tm2.jpg' %}" alt="" />
+								</div>
+								<div class="back">
+									<h4>Steven Wilson</h4>
+									<p>guider</p>
+									<div class="w3l-social">
+										<ul>
+											<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+											<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+											<li><a href="#"><i class="fa fa-rss"></i></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 team-grid">
+						<div class="flip-container">
+							<div class="flipper">
+								<div class="front">
+									<img src="{% static 'indextemp/images/tm3.jpg' %}" alt="" />
+								</div>
+								<div class="back">
+									<h4>Johan Botha</h4>
+									<p>Business man</p>
+									<div class="w3l-social">
+										<ul>
+											<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+											<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+											<li><a href="#"><i class="fa fa-rss"></i></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 team-grid">
+						<div class="flip-container">
+							<div class="flipper">
+								<div class="front">
+									<img src="{% static 'indextemp/images/tm4.jpg' %}" alt="" />
+								</div>
+								<div class="back">
+									<h4>Mary Jane</h4>
+									<p>Analist</p>
+									<div class="w3l-social">
+										<ul>
+											<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+											<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+											<li><a href="#"><i class="fa fa-rss"></i></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //team -->
+<!-- gallery -->
+	<div class="gallery" id="gallery">
+		<div class="container">
+			<div class="w3-gallery-head">
+				<h3>gallery</h3>
+			</div>
+		</div>
+		<div class="w3_agile_services_grids">
+			<ul class="w3l_gallery_grid" id="lightGallery">
+				<li data-title="Blista" data-desc="Lorem Ipsum is simply dummy text of the printing." data-src="images/g1.jpg" data-responsive-src="images/g1.jpg"> 
+					<div class="w3_gallery_grid">
+						<div class="hovereffect">
+							<a href="#">
+								<img src="{% static 'indextemp/images/g11.jpg' %}" alt="" class="img-responsive" />
+								<div class="overlay">
+									<p><i class="fa fa-eye" aria-hidden="true"></i></p>
+								</div>
+							</a>
+						</div>
+					</div>
+				</li>
+				<li data-title="Blista" data-desc="Lorem Ipsum is simply dummy text of the printing." data-src="images/g21.jpg" data-responsive-src="images/g2.jpg"> 
+					<div class="w3_gallery_grid">
+						<div class="hovereffect">
+							<a href="#">
+								<img src="{% static 'indextemp/images/g21.jpg' %}" alt="" class="img-responsive" />
+								<div class="overlay">
+									<p><i class="fa fa-eye" aria-hidden="true"></i></p>
+								</div>
+							</a>
+						</div>
+					</div>
+				</li>
+				<li data-title="Blista" data-desc="Lorem Ipsum is simply dummy text of the printing." data-src="images/g3.jpg" data-responsive-src="images/g3.jpg"> 
+					<div class="w3_gallery_grid">
+						<div class="hovereffect">
+							<a href="#">
+								<img src="{% static 'indextemp/images/g31.jpg' %}" alt="" class="img-responsive" />
+								<div class="overlay">
+									<p><i class="fa fa-eye" aria-hidden="true"></i></p>
+								</div>
+							</a>
+						</div>
+					</div>
+				</li>
+				<li data-title="Blista" data-desc="Lorem Ipsum is simply dummy text of the printing." data-src="images/g4.jpg" data-responsive-src="images/g4.jpg"> 
+					<div class="w3_gallery_grid">
+						<div class="hovereffect">
+							<a href="#">
+								<img src="{% static 'indextemp/images/g41.jpg' %}" alt="" class="img-responsive" />
+								<div class="overlay">
+									<p><i class="fa fa-eye" aria-hidden="true"></i></p>
+								</div>
+							</a>
+						</div>
+					</div>
+				</li>
+				<li data-title="Blista" data-desc="Lorem Ipsum is simply dummy text of the printing." data-src="images/g5.jpg" data-responsive-src="images/g5.jpg"> 
+					<div class="w3_gallery_grid">
+						<div class="hovereffect">
+							<a href="#">
+								<img src="{% static 'indextemp/images/g51.jpg' %}" alt="" class="img-responsive" />
+								<div class="overlay">
+									<p><i class="fa fa-eye" aria-hidden="true"></i></p>
+								</div>
+							</a>
+						</div>
+					</div>
+				</li>
+				<li data-title="Blista" data-desc="Lorem Ipsum is simply dummy text of the printing." data-src="images/g6.jpg" data-responsive-src="images/g6.jpg"> 
+					<div class="w3_gallery_grid">
+						<div class="hovereffect">
+							<a href="#">
+								<img src="{% static 'indextemp/images/g61.jpg' %}" alt="" class="img-responsive" />
+								<div class="overlay">
+									<p><i class="fa fa-eye" aria-hidden="true"></i></p>
+								</div>
+							</a>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+<!-- //gallery -->
+<!-- contact -->
+	<div class="contact" id="contact">
+		<div class="container">
+			<div class="w3l-services-heading">
+				<h3></h3>
+			</div>
+			<div class="agile-contact-grids">
+				<div class="col-md-5 address">
+					<h4></h4>
+					<div class="address-row">
+						<div class="col-md-2 w3-agile-address-left">
+							<span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+						</div>
+						<!--<div class="col-md-10 w3-agile-address-right">
+							<h5>Visit Us</h5>
+							<p>123 Fourth Avenue, SEATTLE WA 98104, San Francisco </p>
+						</div>-->
+						<div class="clearfix"> </div>
+					</div>
+					<div class="address-row">
+						<div class="col-md-2 w3-agile-address-left">
+							<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+						</div>
+						<!--<div class="col-md-10 w3-agile-address-right">
+							<h5>Mail Us</h5>
+							<p><a href="mailto:info@example.com"> mail@example.com</a></p>
+						</div>-->
+						<div class="clearfix"> </div>
+					</div>
+					<!--<div class="address-row">
+						<div class="col-md-2 w3-agile-address-left">
+							<span class="glyphicon glyphicon-phone" aria-hidden="true"></span>
+						</div>
+						<div class="col-md-10 w3-agile-address-right">
+							<h5>Call Us</h5>
+							<p>+11 222 333 4444</p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>-->
+				<!--<div class="col-md-7 contact-form">
+					<form action="#" method="post">
+						<input type="text" name="First Name" placeholder="First Name" required="">
+						<input class="email" name="Last Name" type="text" placeholder="Last Name" required="">
+						<input type="text" name="Number" placeholder="Mobile Number" required="">
+						<input class="email" name="Email" type="text" placeholder="Email" required="">
+						<textarea name="Message" placeholder="Message" required=""></textarea>
+						<input type="submit" value="SUBMIT">
+					</form>
+				</div>-->
+				<div class="clearfix"> </div>	
+			</div>
+		</div>
+	</div>
+	<!-- //contact -->
+	<!-- map -->
+	<!--<div class="agileits-w3layouts-map">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100949.24429313939!2d-122.44206553967531!3d37.75102885910819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan+Francisco%2C+CA%2C+USA!5e0!3m2!1sen!2sin!4v1472190196783" class="map" allowfullscreen=""></iframe>
+	</div>-->
+	<!-- //map -->
+<!-- footer -->
+
+<div class="footer-bot wow fadeInRight animated" data-wow-delay=".5s">
+	<div class="container">
+			<div class="logo2">
+				<h3><a href="index.html"><i class="fa fa-crosshairs" aria-hidden="true"></i>Cloud Storage</a></h3>
+			</div>
+			<div class="ftr-menu">
+				 <ul>
+					<li><a class="scroll" href="{% url 'index' %}">Home </a></li>
+					<li><a class="scroll" href="#">About</a></li>
+					<li><a class="scroll" href="{% url 'login' %}">Login</a></li>
+					<li><a class="scroll" href="{% url 'reg' %}">Registration</a></li>
+
+				 </ul>
+			</div>
+			<div class="clearfix"></div>
+	</div>
+</div>
+<div class="copy-right wow fadeInLeft animated" data-wow-delay=".5s">
+	<div class="container">
+			<p> All Rights Reserved | Design by </p>
+	</div>
+</div>
+<!-- //footer -->
+<!-- Default-JavaScript-File -->
+	<script type="text/javascript" src="{% static 'indextemp/js/jquery-2.1.4.min.js' %}"></script>
+	
+	<script type="text/javascript" src="{% static 'indextemp/js/bootstrap.min.js' %}"></script>
+<!--banner Slider starts Here-->
+		<script src="{% static 'indextemp/js/responsiveslides.min.js' %}"></script>
+							<script>
+								// You can also use "$(window).load(function() {"
+								$(function () {
+								  // Slideshow 4
+								  $("#slider3").responsiveSlides({
+									auto: true,
+									pager:true,
+									nav:false,
+									speed: 500,
+									namespace: "callbacks",
+									before: function () {
+									  $('.events').append("<li>before event fired.</li>");
+									},
+									after: function () {
+									  $('.events').append("<li>after event fired.</li>");
+									}
+								  });
+							
+								});
+							 </script>
+	<script src="{% static 'indextemp/js/lightGallery.js' %}"></script>
+	<script>
+    	 $(document).ready(function() {
+			$("#lightGallery").lightGallery({
+				mode:"fade",
+				speed:800,
+				caption:true,
+				desc:true,
+				mobileSrc:true
+			});
+		});
+    </script>
+<!-- //gallery -->
+<script src="{% static 'indextemp/js/SmoothScroll.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'indextemp/js/move-top.js' %}"></script>
+	<script type="text/javascript" src="{% static 'indextemp/js/easing.js' %}"></script>
+	<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+
+<!-- scrolling script -->
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script> 
+<!-- //scrolling script -->
+
+<!-- Head -->
+</body>
+</html>

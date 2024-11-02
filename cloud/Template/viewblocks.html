@@ -1,0 +1,50 @@
+{% extends 'AdminMaster.html' %}
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 5px;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+</style>
+<body>
+<form method="post" action="{% url 'verify' %}">
+    {% csrf_token %}
+
+    <table align="center">
+         <tr>
+             <th>Block 1</th><td><textarea  name="eblock1" style="width: 300px;height: 150px;" rows="3" cols="3" >{{ block1.block }}</textarea></td>
+        </tr><tr></tr>
+        <tr>
+            <th>Block 2</th><td><textarea  name="eblock2" style="width: 300px;height: 150px;"  rows="3" cols="3">{{ block2.block }}</textarea></td>
+        </tr><tr></tr>
+        <tr>
+            <th>Block 3</th><td><textarea   name="eblock3" style="width: 300px;height: 150px;" rows="3" cols="3" >{{ block3.block }}</textarea></td>
+        </tr>
+
+        <tr>
+          <td></td>  <td><input type="submit" value="Verify" style="width: 300px;height: 50px;"></td>
+        </tr>
+    </table>
+    <br/><br/>
+
+
+
+
+
+</form>
+
+</body>
+</html>
+{% endblock %}

@@ -1,0 +1,87 @@
+Secure File Storage on Cloud Using Hybrid Cryptography in Python
+The information over internet is becoming a critical issue due to security problems. We have proposed a system for securing the important data from a file. Cryptography algorithms provides an effective way for protecting sensitive information. It is a method for storing and transmitting data in a form that is only readable by intended users. When the file is being added on the server, the file gets converted into byte array. The byte array will further divide into three different parts and each part is encrypted into respective techniques namely, AES, DES and RC2. Advanced Encryption Standard (AES) is more popular and widely used symmetric encryption algorithm. With the increasing computing power, it was considered vulnerable against exhaustive key search attack. The Data Encryption Standard (DES) is a symmetric-key block cipher. DES is an implementation of a Feistel Cipher. It uses 16 round Feistel structure. The block size of DES is 64-bit. Though, key length is 64-bit, DES has an effective key length of 56 bits, since 8 of the 64 bits of the key are not used by the encryption algorithm. RC2 (Rivest Cipher) is a symmetric-key block cipher. Once the files are saved in a respective technique, user will an email. Which will act as key to access a particular file. Whenever user needs the file, user will enter the key and it will decrypt the file using the three techniques, and the user will get the file. When user needs to access the respective file, users should give document which will trigger the decryption process on the particular cryptography strategies and merge all the three files to its original file.
+ 
+	Modules:
+The system comprises of 1 major modules with their sub-modules as follows:
+1.	User:
+
+•	User Login: User can login in using credentials.
+•	File Upload: User can upload files, using aes, des and rc2 algorithm the cryptography key  will get mail to the user.
+•	File Download: To download file user need to use the key  sent on the mail.
+2.	Admin
+Login: admin can login to this site
+Approve: approve user for accessing the page
+Verify: verify file for save
+
+
+
+
+
+
+
+
+
+
+ 
+Project Lifecycle:
+
+Description
+The waterfall Model is a linear sequential flow. In which progress is seen as flowing steadily downwards (like a waterfall) through the phases of software implementation. This means that any phase in the development process begins only if the previous phase is complete. The waterfall approach does not define the process to go back to the previous phase to handle changes in requirement. The waterfall approach is the earliest approach that was used for software development.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	Hardware Requirement:
+
+	Processor –Core i3
+	Hard Disk – 160 GB
+	Memory – 1GB RAM
+	Monitor
+
+	Software Requirement:
+
+	Windows 7 or higher
+	Python
+	Django framework
+	MySQL database
+
+
+
+
+
+
+
+
+
+
+
+ 
+	Advantages
+•	The stored image file is completely secured, as the file is being encrypted not just by using one but three encryption algorithm which are AES, DES and RC2.
+•	The system is very secure and robust in nature.
+•	Data is kept secured on cloud server which avoids unauthorized access.
+	Limitation
+•	Data need to be entered properly otherwise, outcome may won’t be accurate.
+•	Requires an active internet connection to connect with cloud server.
+	Application	
+•	This system can be used by the multiple peoples to get the counselling sessions online.
+
+
+

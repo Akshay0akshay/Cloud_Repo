@@ -1,0 +1,224 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+{% load static %}
+<head>
+<title>Visitors an Admin Panel Category Bootstrap Responsive Website Template | Registration :: w3layouts</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Visitors Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script>
+        function validation()
+        {
+        if(document.frm.Name.value=="")
+        {
+        alert("plz enter  name");
+        document.frm.Name.focus();
+        return false;
+        }
+       else if(document.frm.HouseName.value=="")
+        {
+        alert("plz enter house name");
+        document.frm.HouseName.focus();
+        return false;
+        }
+        else if(document.frm.Location.value=="")
+        {
+        alert("plz enter  location");
+        document.frm.Location.focus();
+        return false;
+        }
+        else if(document.frm.ZipCode.value=="")
+        {
+        alert("plz enter zip code");
+        document.frm.ZipCode.focus();
+        return false;
+        }
+        else if(document.frm.Email.value=="")
+        {
+        alert("plz enter  Email");
+        document.frm.Email.focus();
+        return false;
+        }
+        else if(document.frm.Phone.value=="")
+        {
+        alert("plz enter phone no.");
+        document.frm.Phone.focus();
+        return false;
+        }
+        else if(document.frm.Username.value=="")
+        {
+        alert("plz enter user name");
+        document.frm.Username.focus();
+        return false;
+        }
+        else if(document.frm.Password.value=="")
+        {
+        alert("plz enter password");
+        document.frm.Password.focus();
+        return false;
+        }
+        var emailid=document.frm.Email.value;
+        var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+        if(reg.test(emailid) == false)
+        {
+        alert("Please enter a valid Email id");
+        document.frm.Email.focus();
+         return false;
+        }
+        var phone=document.frm.Phone.value;
+	var regx=/^(\+91)([6789]\d{9})$/;
+	if(regx.test(phone)==false)
+	{
+		alert("enter country code +91,then 10 digit no starting with 6");
+		document.frm.Phone.focus();
+		return false;
+	}
+	var zip=document.frm.ZipCode.value;
+	var regx=/^([6]\d{6})$/;
+	if(regx.test(zip)==false)
+	{
+		alert("zipcode must be 6 digit no starting with 6|7|8|9");
+		document.frm.ZipCode.focus();
+		return false;
+	}
+	else if((document.frm.gender[0].checked==false) && (document.frm.gender[1].checked==false))
+        {
+        alert("plz select  gender");
+        return false;
+        }
+
+       }
+     function onlyletter()
+     {
+     if((!isNaN(document.frm.Name.value)))
+{
+alert("Only letters are allowed");
+document.frm.Name.focus();
+document.frm.Name.value=="";
+return false;
+}
+     }
+     function location()
+     {
+     if((!isNaN(document.frm.Location.value)))
+{
+alert("Only letters are allowed");
+document.frm.Location.focus();
+document.frm.Location.value=="";
+return false;
+}
+     }
+
+ function onlynumber()
+     {
+     if((isNaN(document.frm.ZipCode.value)))
+{
+alert("Only numbers are allowed");
+document.frm.ZipCode.focus();
+document.frm.ZipCode.value=="";
+return false;
+}
+     }
+
+function phno()
+     {
+     if((isNaN(document.frm.Phone.value)))
+{
+alert("Only numbers are allowed");
+document.frm.Phone.focus();
+document.frm.Phone.value=="";
+return false;
+}
+     }
+function showHint(s)
+{
+
+
+var s=document.frm.Username.value;
+alert(s);
+if (s.length==0)
+  {
+  document.getElementById("txtHint").innerHTML="";
+  return;
+  }
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.onreadystatechange=function()
+  {
+  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+    document.getElementById("txtHint").innerHTML=xmlhttp.responseText;
+    }
+  }
+xmlhttp.open("GET","{% url 'unamecheck' uname=s",true);
+xmlhttp.send();
+}
+
+
+
+</script>
+
+
+
+
+
+
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- bootstrap-css -->
+<link rel="stylesheet" href="{% static 'Login-Temp/css/bootstrap.min.css' %}" >
+<!-- //bootstrap-css -->
+<!-- Custom CSS -->
+<link href="{% static 'Login-Temp/css/style.css' %}" rel='stylesheet' type='text/css' />
+<link href="{% static 'Login-Temp/css/style-responsive.css' %}" rel="stylesheet"/>
+<!-- font CSS -->
+<link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+<!-- font-awesome icons -->
+<link rel="stylesheet" href="{% static 'Login-Temp/css/font.css' %}" type="text/css"/>
+<link href="{% static 'Login-Temp/css/font-awesome.css' %}" rel="stylesheet">
+<!-- //font-awesome icons -->
+<script src="{% static 'Login-Temp/js/jquery2.0.3.min.js' %}"></script>
+</head>
+<body>
+<div class="reg-w3">
+<div class="w3layouts-main">
+	<h2>Register Now</h2>
+		<form action="{% url 'reg' %}" method="post" name="frm">
+			{% csrf_token %}
+			<input type="text" class="ggg" name="Name" placeholder="NAME" required="" onchange="return onlyletter()">Gender
+			<input type="radio"  name="gender" value="Male">Male
+			<input type="radio" name="gender" value="Female">Female
+			<input type="text" class="ggg" name="HouseName" placeholder="House Name" required="">
+			<input type="text" class="ggg" name="Location" placeholder="Location" required="" onchange="return location()">
+			<input type="text" class="ggg" name="ZipCode" placeholder="Zip Code" required="" onchange="return onlynumber()">
+			<input type="email" class="ggg" name="Email" placeholder="E-MAIL" required="">
+			<input type="text" class="ggg" name="Phone" placeholder="PHONE" required="" onchange="return phno()">
+			<input type="text" class="ggg" name="Username" placeholder="Username" required="" id="Username" onchange="showHint(this.value)"><p id="txtHint">
+			<input type="password" class="ggg" name="Password" placeholder="PASSWORD" required="">
+
+			
+				<div class="clearfix"></div>
+				<input type="submit" value="submit" name="register" >
+		</form>
+		<p>Already Registered.<a href="{% url 'login' %}">Login</a></p>
+</div>
+</div>
+<script src="{% static 'Login-Temp/js/bootstrap.js' %}"></script>
+<script src="{% static 'Login-Temp/js/jquery.dcjqaccordion.2.7.js' %}"></script>
+<script src="{% static 'Login-Temp/js/scripts.js' %}"></script>
+<script src="{% static 'Login-Temp/js/jquery.slimscroll.js' %}"></script>
+<script src="{% static 'Login-Temp/js/jquery.nicescroll.js' %}"></script>
+<!--[if lte IE 8]><script language="javascript" type="text/javascript" src="{% static 'Login-Temp/js/flot-chart/excanvas.min.js' %}"></script><![endif]-->
+<script src="{% static 'Login-Temp/js/jquery.scrollTo.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+{% extends 'AdminMaster.html' %}
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 5px;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+</style>
+</head>
+<body>
+<form>
+    {% csrf_token %}
+    <table align="center" border="1px">
+        <tr>
+            <th>Name</th>
+            <th>Email Id</th>
+            <th>Phone No</th>
+            <th>File Path</th>
+            <th>Key</th>
+            <th>View</th>
+        </tr>
+        {% for i in reg %}
+        {% for a in file %}
+        {% for j in encrypt %}
+
+        {% if i.uname == a.uname %}
+        {% if a.id == j.fid %}
+
+        <tr>
+            <td>{{i.name}}</td>
+            <td>{{i.email}}</td>
+            <td>{{i.phno}}</td>
+            <td>{{a.fname}}</td>
+            <td>{{j.key}}</td>
+
+            <td><a href="{% url 'viewblock' id=a.id %}">View Blocks</a> </td>
+        </tr>
+        {% endif %}
+        {% endif %}
+
+         {% endfor %}
+         {% endfor %}
+         {% endfor %}
+
+    </table>
+</form>
+</body>
+</html>
+{% endblock %}
